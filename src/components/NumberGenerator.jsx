@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useGenerateNumbers from '../hooks/useGenerateNumbers';
+import LottoNumbersList from './LottoNumbersList';
 
 export const LOTTTERY_NAMES = {
     megamillions: 'Mega Millions',
@@ -22,7 +23,6 @@ const NumberGenerator = () => {
       )
     }
 
-
     const handleButtonClick = () => {
       const result = []
       for (let i = 0; i < numberOfGames; i++) {
@@ -31,22 +31,8 @@ const NumberGenerator = () => {
       setLotteryNumbers(result)
     }
 
-    const renderNumbersList = () => {
-      if (lotteryNumbers === null) return;
-
-      return (
-        <div>
-          {
-            lotteryNumbers.map(element => {
-              return <p>{`Numbers: ${element.numbers.toString()} Megaball: ${element.megaball}`}</p>
-            })
-          }
-        </div>
-      )
-    }
-
     return (
-      <div>
+      <div className='number-generator'>
         <h1>Lottery Number Generator</h1>
         <input
           type={'radio'}
@@ -55,7 +41,9 @@ const NumberGenerator = () => {
           checked={lotteryName === LOTTTERY_NAMES.megamillions}
           onChange={() => setLotteryName(LOTTTERY_NAMES.megamillions)}
         />
-        {LOTTTERY_NAMES.megamillions}
+        <span>
+          {LOTTTERY_NAMES.megamillions}
+        </span>
         <input
           type={'radio'}
           name={'lottery_name'}
@@ -63,10 +51,14 @@ const NumberGenerator = () => {
           checked={lotteryName === LOTTTERY_NAMES.powerball}
           onChange={() => setLotteryName(LOTTTERY_NAMES.powerball)}
         />
-        {LOTTTERY_NAMES.powerball}
-        <p>Games Number: {renderDropdown()}</p>
-        <button onClick={handleButtonClick}>Generate</button>
-        { renderNumbersList() }
+        <span>
+          {LOTTTERY_NAMES.powerball}
+        </span>
+        <span>
+          <p>Games Number: {renderDropdown()}</p>
+        </span>
+        <button onClick={handleButtonClick}>Generate</button>  
+        {lotteryNumbers  && <LottoNumbersList lottoNumbers={lotteryNumbers} />}
       </div>
     )
 }

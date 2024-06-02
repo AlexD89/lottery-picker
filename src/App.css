@@ -1,38 +1,73 @@
+@import 'font.css';
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #829356;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.number-generator {
+  background-color: #0d3d56;
+  width: 60%;
+  height: 100vh;
+  padding: 50px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: 'Automani';
+  color: #c02f1d;
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+
+[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+}
+
+button {
+  background-color: #efd469;
+  border: none;
+  color: #0d3d56;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bca136;
+}
+
+span {
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.lotto_number {
+  border-radius: 100%;
+  background-color: rgb(255, 248, 55);
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-size: 27px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+}
+
+.megaball {
+  background-color: rgb(255, 26, 26);
+}
+
+.lottery-numbers-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
