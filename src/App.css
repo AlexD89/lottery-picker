@@ -52,13 +52,13 @@ select {
   font-size: 20px;
   font-weight: 900;
   color: #0d3d56;
-  background-color: #efd469;
+  background-color: #f0da7f;
   border: none;
   outline: none;
   border-radius: 5%;
-  padding: 5px 0 5px 15px;
+  padding: 3px 0 3px 15px;
   margin: 0 10px;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 
 button {
