@@ -3,15 +3,26 @@
 .App {
   text-align: center;
   background-color: #829356;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.basic-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+.bacis-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .number-generator {
   background-color: #0d3d56;
   width: 60%;
-  height: 100vh;
   padding: 50px 10px;
 }
 
@@ -26,6 +37,19 @@ h1 {
   width: 20px;
   height: 20px;
   margin: 0px 5px;
+}
+
+select {
+  font-size: 20px;
+  font-weight: 900;
+  color: #0d3d56;
+  background-color: #efd469;
+  border: none;
+  outline: none;
+  border-radius: 5%;
+  padding: 5px 0 5px 15px;
+  margin: 0 10px;
+  vertical-align: text-top;
 }
 
 button {
@@ -43,14 +67,27 @@ button:hover {
   background-color: #bca136;
 }
 
+.number-setting-button {
+  background-color: transparent;
+  color: #efd469;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.number-setting-button:hover {
+  background-color: transparent;
+  color: #bca136;
+}
+
 span {
   color: whitesmoke;
   font-size: 30px;
 }
 
 .lotto_number {
-  border-radius: 100%;
-  background-color: rgb(255, 248, 55);
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
   width: 50px;
   height: 50px;
   color: black;
@@ -63,7 +100,7 @@ span {
 }
 
 .megaball {
-  background-color: rgb(255, 26, 26);
+  background-color: yellow;
 }
 
 .lottery-numbers-row {
@@ -77,7 +114,7 @@ span {
     width: 80%;
   }
   h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
   span {
     font-size: 20px;
@@ -88,9 +125,11 @@ span {
     margin: 0px 5px;
   }
   .lotto_number {
+    max-height: 35px;
+    min-width: 35px;
+    font-size: 18px;
+  }
+  button {
     font-size: 20px;
-    height: 35px;
-    width: 35px;
-    aspect-ratio: 1/1;
   }
 }

@@ -3,7 +3,7 @@ import LottoNumbersListRow from "./LottoNumbersListRow";
 
 const LottoNumbersList = ({lottoNumbers}) => {
   return (
-    <div>
+    <div className="lotto-numbers-list">
       {
         lottoNumbers.map(element => {
           return <LottoNumbersListRow
