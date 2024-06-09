@@ -37,22 +37,26 @@ const NumberGenerator = () => {
     const renderLotterySelect = () => {
       return (
         <span>
-          <input
-            type={'radio'}
-            name={'lotter_name'}
-            value={LOTTTERY_NAMES.megamillions}
-            checked={lotteryName === LOTTTERY_NAMES.megamillions}
-            onChange={() => setLotteryName(LOTTTERY_NAMES.megamillions)}
-          />
-          {LOTTTERY_NAMES.megamillions}
-          <input
-            type={'radio'}
-            name={'lottery_name'}
-            value={LOTTTERY_NAMES.powerball}
-            checked={lotteryName === LOTTTERY_NAMES.powerball}
-            onChange={() => setLotteryName(LOTTTERY_NAMES.powerball)}
-          />
-          {LOTTTERY_NAMES.powerball}
+          <label>
+            <input
+              type={'radio'}
+              name={'lotter_name'}
+              value={LOTTTERY_NAMES.megamillions}
+              checked={lotteryName === LOTTTERY_NAMES.megamillions}
+              onChange={() => setLotteryName(LOTTTERY_NAMES.megamillions)}
+            />
+            {LOTTTERY_NAMES.megamillions}
+          </label>
+          <label>
+            <input
+              type={'radio'}
+              name={'lottery_name'}
+              value={LOTTTERY_NAMES.powerball}
+              checked={lotteryName === LOTTTERY_NAMES.powerball}
+              onChange={() => setLotteryName(LOTTTERY_NAMES.powerball)}
+            />
+            {LOTTTERY_NAMES.powerball}
+          </label>
         </span>
       )
     }

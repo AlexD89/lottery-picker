@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  background-color: #829356;
+  background-color: rgb(207, 204, 204);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,8 +20,17 @@
   flex-direction: column;
 }
 
+label {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.wrappable {
+  white-space: normal;
+}
+
 .number-generator {
-  background-color: #0d3d56;
+  background-color: #12567b;
   width: 60%;
   padding: 50px 10px;
 }
