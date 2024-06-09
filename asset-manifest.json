@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lottery-picker/static/css/main.6aca6549.css",
+    "main.css": "/lottery-picker/static/css/main.97e3cd3a.css",
     "main.js": "/lottery-picker/static/js/main.e596ae1e.js",
     "static/js/453.5ecc54ad.chunk.js": "/lottery-picker/static/js/453.5ecc54ad.chunk.js",
     "static/media/Automani.ttf": "/lottery-picker/static/media/Automani.6996cfd76aa54b5741fc.ttf",
     "index.html": "/lottery-picker/index.html",
-    "main.6aca6549.css.map": "/lottery-picker/static/css/main.6aca6549.css.map",
+    "main.97e3cd3a.css.map": "/lottery-picker/static/css/main.97e3cd3a.css.map",
     "main.e596ae1e.js.map": "/lottery-picker/static/js/main.e596ae1e.js.map",
     "453.5ecc54ad.chunk.js.map": "/lottery-picker/static/js/453.5ecc54ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6aca6549.css",
+    "static/css/main.97e3cd3a.css",
     "static/js/main.e596ae1e.js"
   ]
 }
